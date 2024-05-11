@@ -1,0 +1,17 @@
+.{
+    .name = "zig-opengl-vulkan-learn",
+    .version = "0.0.1",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "libs",
+        "src",
+    },
+    .dependencies = .{
+        .common = .{ .path = "libs/common" },
+        .system_sdk = .{ .path = "libs/system-sdk" },
+        .zglfw = .{ .path = "libs/zglfw" },
+        .zgui = .{ .path = "libs/zgui" },
+        .zopengl = .{ .path = "libs/zopengl" },
+    },
+}
